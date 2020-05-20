@@ -31,7 +31,7 @@
           </div>
         </div>
         <div class='image' @click='move(item)' v-if='item.imageUrl'>
-          <img :src='`https://idolboard.com/img/thumb/${item.imageUrl}`'>
+          <img :src='`https://suyongso.co/img/thumb/${item.imageUrl}`'>
         </div>
       </div>
     </div>

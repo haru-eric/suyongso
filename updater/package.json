@@ -7,6 +7,6 @@
   },
   "scripts": {
     "start": "node src",
-    "start:prod": "pm2 start src --name 'IDOLBOARD UPDATER'"
+    "start:prod": "pm2 start src --name 'SUYONGSO UPDATER'"
   }
 }

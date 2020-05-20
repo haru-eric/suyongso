@@ -2,11 +2,11 @@
   <div>
     <div class='accountBox'>
       <div class='article'>
-        <div class='header'>
+        <!-- <div class='header'>
           <nuxt-link to='/'>
             <img src='~/assets/Logo.png'>
           </nuxt-link>
-        </div>
+        </div> -->
         <div class='title'>회원가입</div>
         <el-input class='marginBottom' placeholder='ID' v-model='username' autofocus />
         <el-input class='marginBottom' placeholder='비밀번호' v-model='password' show-password />

@@ -6,7 +6,7 @@
         <el-row :gutter='50'>
           <el-col :span='8'>
             <div class='column-head'>사이트 안내</div>
-            <p>아이돌보드</p>
+            <p>수용소</p>
           </el-col>
           <el-col :span='8'>
             <div class='column-head'>이용정책</div>

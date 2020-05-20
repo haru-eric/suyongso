@@ -8,7 +8,7 @@ const pick = require('./pick')
 const sticker = require('./sticker')
 const topic = require('./topic')
 
-const VERSION = 96
+const VERSION = 202
 
 const app = new Router()
 

@@ -11,24 +11,21 @@
           :router='true'
           active-text-color='#29313D'>
           <el-menu-item index='1' route='/' class='Logo' @click='forceUpdate'>
-            <img src='/favicon.png'>
+            <img src='/icon.png'>
           </el-menu-item>
-          <el-menu-item index='2' route='/pick' class='hidden-mobile' @click='forceUpdate'>
+          <!-- <el-menu-item index='2' route='/pick' class='hidden-mobile' @click='forceUpdate'>
             <font-awesome-icon icon='chart-line' />
             아이돌 차트
           </el-menu-item>
           <el-menu-item index='3' route='/gallery' class='hidden-mobile' @click='forceUpdate'>
             <font-awesome-icon icon='camera-retro' />
             갤러리
-          </el-menu-item>
-          <el-menu-item index='4' route='/b/best' class='hidden-mobile' @click='forceUpdate'>
-            <font-awesome-icon icon='star' />
-            인기
-          </el-menu-item>
-          <el-menu-item index='5' route='/b/talk' class='hidden-mobile' @click='forceUpdate'>TALK</el-menu-item>
-          <el-menu-item index='6' route='/b/girl' class='hidden-mobile' @click='forceUpdate'>연예</el-menu-item>
-          <el-menu-item index='7' route='/b/anime' class='hidden-mobile' @click='forceUpdate'>애니</el-menu-item>
-          <el-menu-item index='9' route='/b/notice' class='hidden-mobile' @click='forceUpdate'>공지</el-menu-item>
+          </el-menu-item> -->
+          <el-menu-item index='4' route='/b/best' class='hidden-mobile' @click='forceUpdate'>HIT</el-menu-item>
+          <!-- <el-menu-item index='5' route='/b/talk' class='hidden-mobile' @click='forceUpdate'>TALK</el-menu-item>
+          <el-menu-item index='6' route='/b/girl' class='hidden-mobile' @click='forceUpdate'>연예</el-menu-item> -->
+          <el-menu-item index='7' route='/b/anime' class='hidden-mobile' @click='forceUpdate'>애니동</el-menu-item>
+          <!-- <el-menu-item index='9' route='/b/notice' class='hidden-mobile' @click='forceUpdate'>공지</el-menu-item> -->
           <el-submenu index='10' class='hidden-mobile'>
             <template slot='title'>포인트</template>
             <el-menu-item index='10-1' route='/iconshop'>아이콘샵</el-menu-item>
@@ -40,7 +37,7 @@
                 <img :src='$store.state.user.profileImageUrl'>
               </div>
               <img :src='`/level/${$store.state.user.level}.png`'>
-              <img class='Icon' :src='`https://idolboard.com/icon/${$store.state.user.icon}`' v-if='$store.state.user.icon !== ""'>
+              <img class='Icon' :src='`https://suyongso.co/icon/${$store.state.user.icon}`' v-if='$store.state.user.icon !== ""'>
               {{ $store.state.user.nickname }}
             </template>
             <el-menu-item index='11-1' route='/edit'>프로필 편집</el-menu-item>

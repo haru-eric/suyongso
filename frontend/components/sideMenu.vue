@@ -4,29 +4,28 @@
       <el-menu-item class='is-active' index='1' @click='exit()'>
         <font-awesome-icon icon='times' />
       </el-menu-item>
-      <el-menu-item index='2' @click='move("/pick")'>
+      <!-- <el-menu-item index='2' @click='move("/pick")'>
         <font-awesome-icon icon='chart-line' />
         <span>아이돌 차트</span>
       </el-menu-item>
       <el-menu-item index='3' @click='move("/gallery")'>
         <font-awesome-icon icon='camera-retro' />
         <span>갤러리</span>
-      </el-menu-item>
+      </el-menu-item> -->
       <el-menu-item index='4' @click='move("/b/best")'>
-        <font-awesome-icon icon='star' />
-        <span>인기</span>
+        <span>HIT</span>
       </el-menu-item>
-      <el-menu-item index='5' @click='move("/b/talk")'>
+      <!-- <el-menu-item index='5' @click='move("/b/talk")'>
         <span>TALK</span>
       </el-menu-item>
       <el-menu-item index='6' @click='move("/b/girl")'>
         <span>연예</span>
-      </el-menu-item>
+      </el-menu-item> -->
       <el-menu-item index='7' @click='move("/b/anime")'>
-        <span>애니</span>
-      </el-menu-item>
+        <span>애니동</span>
+      <!-- </el-menu-item>
       <el-menu-item index='9' @click='move("/b/notice")'>
-        <span>공지</span>
+        <span>공지</span> -->
       </el-menu-item>
       <el-submenu index='10'>
         <template slot='title'>포인트</template>

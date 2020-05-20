@@ -13,7 +13,7 @@
                   <el-button class='floatRight' type='primary' size='small'>아이돌 등록</el-button>
                 </nuxt-link>
               </div>
-              <div class='chartAce' :style='aceprofileImageUrl ? `background-image: url(${"https://idolboard.com/pick/" + aceprofileImageUrl})` : ""'>
+              <div class='chartAce' :style='aceprofileImageUrl ? `background-image: url(${"https://suyongso.co/pick/" + aceprofileImageUrl})` : ""'>
                 <div class='background' />
                 <div class='number-one'>
                   <img src='/number-one.svg'>
@@ -39,7 +39,7 @@
                   v-for='(item, index) in picks' :key='index'>
                   <div class='grade'>{{ numberWithCommas(index + 1) }}</div>
                   <div class='image' @click='move(item)'>
-                    <img :src='item.profile ? "https://idolboard.com/pick/thumb/" + item.profile : "/default.png"'>
+                    <img :src='item.profile ? "https://suyongso.co/pick/thumb/" + item.profile : "/default.png"'>
                   </div>
                   <div class='info' @click='move(item)'>
                     <div class='name'>{{ item.name }}</div>

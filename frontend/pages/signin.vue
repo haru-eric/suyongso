@@ -1,11 +1,11 @@
 <template>
   <div class='accountBox'>
     <div class='article'>
-      <div class='header'>
+      <!-- <div class='header'>
         <nuxt-link to='/'>
           <img src='~/assets/Logo.png'>
         </nuxt-link>
-      </div>
+      </div> -->
       <el-input class='marginBottom' placeholder='ID' v-model='username' autofocus />
       <el-input class='marginBottom' placeholder='비밀번호' v-model='password' show-password />
       <el-button-group>
@@ -71,8 +71,8 @@
       },
       async signUp() {
         const success = await this.checkRecaptcha() 
-        if (!success) return this.$message.error('recaptcha fail') 
-        this.$router.push({ path: '/signup' })
+        if (!success) return this.$message.error('recaptcha fail')  
+        await this.$router.push({ path: '/signup' })
       },
       async checkRecaptcha() {
          const token = await this.$recaptcha.execute('login')

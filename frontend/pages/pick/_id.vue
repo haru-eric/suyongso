@@ -16,7 +16,7 @@
                   <el-button class='floatRight' type='primary' size='small'>아이돌 등록</el-button>
                 </nuxt-link>
               </div>
-              <div class='pickRead' :style='pick.profile ? `background-image: url(${"https://idolboard.com/pick/" + pick.profile})` : ""'>
+              <div class='pickRead' :style='pick.profile ? `background-image: url(${"https://suyongso.co/pick/" + pick.profile})` : ""'>
                 <div class='background' />
                 <div class='name'>{{ pick.name }}</div>
                 <div class='group'>{{ pick.groupname }} ({{ pick.pureGroupname }})</div>
@@ -98,7 +98,7 @@
     },
     head() {
       return {
-        title: `${this.pick.name} - 아이돌보드`
+        title: `${this.pick.name} - 수용소`
       }
     }
   }

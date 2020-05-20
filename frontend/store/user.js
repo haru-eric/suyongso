@@ -24,8 +24,8 @@ export const mutations = {
     state.username = data.user.username
     state.nickname = data.user.nickname
     state.email = data.user.email
-    state.profileImageUrl = data.user.profileImageUrl ? `https://idolboard.com/profile/${data.user.profileImageUrl}` : '/profile.png'
-    state.backgroundImageUrl = data.user.backgroundImageUrl ? `https://idolboard.com/background/${data.user.backgroundImageUrl}` : null
+    state.profileImageUrl = data.user.profileImageUrl ? `https://suyongso.co/profile/${data.user.profileImageUrl}` : '/profile.png'
+    state.backgroundImageUrl = data.user.backgroundImageUrl ? `https://suyongso.co/background/${data.user.backgroundImageUrl}` : null
     state.registerDate = data.user.registerDate
     state.blockDate = data.user.blockDate
     state.level = data.user.level
@@ -37,8 +37,8 @@ export const mutations = {
   },
   setUsername: (state, username) => state.username = username,
   setNickname: (state, nickname) => state.nickname = nickname,
-  setProfileImageUrl: (state, url) => state.profileImageUrl = `https://idolboard.com/profile/${url}`,
-  setBackgroundImageUrl: (state, url) => state.backgroundImageUrl = `https://idolboard.com/background/${url}`,
+  setProfileImageUrl: (state, url) => state.profileImageUrl = `https://suyongso.co/profile/${url}`,
+  setBackgroundImageUrl: (state, url) => state.backgroundImageUrl = `https://suyongso.co/background/${url}`,
   setIcon: (state, filename) => state.icon = filename,
   setNoticeCount: (state, count) => state.noticeCount = count,
   setUpPoint: (state, point) => state.point += point,

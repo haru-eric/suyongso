@@ -24,9 +24,9 @@
               </div>
               <div class='Blank' />
               <div class='topicArticle'>
-                <div class='header' :style='topic.background ? `background-image: url(${"https://idolboard.com/background/" + topic.background})` : ""'>
+                <div class='header' :style='topic.background ? `background-image: url(${"https://suyongso.co/background/" + topic.background})` : ""'>
                   <div class='image'>
-                    <img :src='topic.profile ? "https://idolboard.com/profile/" + topic.profile : "/profile.png"'>
+                    <img :src='topic.profile ? "https://suyongso.co/profile/" + topic.profile : "/profile.png"'>
                   </div>
                   <div class='info'>
                     <div class='subject'>
@@ -39,7 +39,7 @@
                     </div>
                     <div class='author'>
                       <img :src='`/level/${topic.level}.png`'>
-                      <img class='icon' :src='`https://idolboard.com/icon/${topic.icon}`' v-if='topic.icon !== ""'>
+                      <img class='icon' :src='`https://suyongso.co/icon/${topic.icon}`' v-if='topic.icon !== ""'>
                       <span class='userTitle' v-if='topic.userTitle'>{{ topic.userTitle }}</span>
                       {{ topic.author }}
                     </div>
@@ -91,10 +91,10 @@
                     <el-button-group>
                       <el-button type='primary' size='small' round @click='votes(true)'>
                         <img src='/up.png'>
-                        데뷔 {{ topic.likes }}
+                        예스잼 {{ topic.likes }}
                       </el-button>
                       <el-button type='info' size='small' round @click='votes(false)'>
-                        탈락 {{ topic.hates }}
+                        노잼 {{ topic.hates }}
                         <img src='/down.png'>
                       </el-button>
                     </el-button-group>
@@ -104,9 +104,9 @@
                   <div class='item'>
                     <span>
                       <font-awesome-icon icon='link' />
-                      https://idolboard.com/b/{{ domain }}/{{ id }}
+                      https://suyongso.co/b/{{ domain }}/{{ id }}
                     </span>
-                    <div class='event' @click='copyLink(`https://idolboard.com/b/${domain}/${id}`)'>복사하기</div>
+                    <div class='event' @click='copyLink(`https://suyongso.co/b/${domain}/${id}`)'>복사하기</div>
                   </div>
                 </div>
               </div>
@@ -304,9 +304,9 @@
     },
     head () {
       return {
-        title: `${this.topic.title} - 아이돌보드`,
+        title: `${this.topic.title} - 수용소`,
         meta: [
-          { hid: `${this.id}`, name: `${this.topic.content.substr(0, 100)}`, content: '아이돌보드 - K-POP, ITZY, 트와이스, 프로듀스48, 프로듀스101, 프로미스나인, 아이즈원, 버스터즈' }
+          { hid: `${this.id}`, name: `${this.topic.content.substr(0, 100)}`, content: '수용소 - K-POP, ITZY, 트와이스, 프로듀스48, 프로듀스101, 프로미스나인, 아이즈원, 버스터즈' }
         ]
       }
     }

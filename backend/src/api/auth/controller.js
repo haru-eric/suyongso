@@ -69,8 +69,8 @@ exports.sendMail = async ctx => {
   const getEmail = await readUser.email(email)
   if (getEmail) return ctx.body = { message: '이미 존재하는 이메일입니다.', status: 'fail' }
   const decrypt = Crypto.encrypt(email).replace(/=+/g, '')
-  const subject = `[아이돌보드] 회원가입 인증코드 발송 안내`
-  const content = `<p><h1>아이돌보드</h1></p>
+  const subject = `[수용소] 회원가입 인증코드 발송 안내`
+  const content = `<p><h1>수용소</h1></p>
     <p><h3>인증코드 : ${decrypt}</h3></p>
     <p>위의 인증코드를 기입해주세요.</p>`
   try {

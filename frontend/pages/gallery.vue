@@ -27,11 +27,11 @@
                   <div v-if='item.imageUrl' class='item'>
                     <img
                       @click='move(item)'
-                      :src='`https://idolboard.com/img/${item.imageUrl}`'>
+                      :src='`https://suyongso.co/img/${item.imageUrl}`'>
                     <div class='user'>
                       <div class='item'>
                         <div class='image'>
-                          <img :src='item.profile ? "https://idolboard.com/profile/" + item.profile : "/profile.png"'>
+                          <img :src='item.profile ? "https://suyongso.co/profile/" + item.profile : "/profile.png"'>
                         </div>
                         <div class='info'>
                           <div><b>{{ item.author }}</b></div>

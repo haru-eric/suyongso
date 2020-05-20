@@ -32,7 +32,7 @@
         @click='view(item)'
         v-for='(item, index) in stickers' :key='index'>
         <div class='image'>
-          <img :src='`https://idolboard.com/sticker/${item.id}/1.${item.ext}`'>
+          <img :src='`https://suyongso.co/sticker/${item.id}/1.${item.ext}`'>
         </div>
         <div class='info'>
           <div class='name'>{{ item.name }}</div>

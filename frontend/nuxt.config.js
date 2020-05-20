@@ -3,14 +3,14 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: '아이돌보드',
+    title: '수용소 - 서브컬쳐 커뮤니티',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no' },
       { name: 'theme-color', content: '#29313D' },
       { name: 'google-site-verification', content: 'BxPxwI8rlJTdR-pDX9EMgegVSy0dNLjXvgQLuRk8D5I' },
       { name: 'robots', content: 'index,follow' },
-      { hid: 'description', name: 'description', content: '아이돌보드 - K-POP, ITZY, 트와이스, 프로듀스48, 프로듀스101, 프로미스나인, 아이즈원, 버스터즈' }
+      { hid: 'description', name: 'description', content: '수용소 - 서브컬쳐 커뮤니티' }
     ],
     script: [
       {
@@ -18,7 +18,7 @@ module.exports = {
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/icon.png' }
     ]
   },
   /*
@@ -60,13 +60,14 @@ module.exports = {
   modules: [
     '@nuxtjs/proxy',
     '@nuxtjs/axios',
-    '@nuxtjs/bulma',  
-    ['@nuxtjs/recaptcha',{
+    '@nuxtjs/bulma',
+    ['@nuxtjs/recaptcha', {
       hideBadge: true,
       siteKey: '6LfHQ70UAAAAAGSDxOcdcP0eAJLpelwsdMvgZPke',
-      version: 3 }],
+      version: 3
+    }],
     //['@nuxtjs/google-analytics',{
-     // id: 'UA-127341158-2'}],
+    // id: 'UA-127341158-2'}],
     ['@nuxtjs/google-adsense'],
     ['@nuxtjs/moment', ['ko']],
     'nuxt-fontawesome',
@@ -90,7 +91,7 @@ module.exports = {
     '/api': 'http://localhost:8000'
   },
   env: {
-    SOCKET_HOST_URL: 'https://idolboard.com'
+    SOCKET_HOST_URL: 'https://suyongso.co'
   },
   configureWebpack: {
     output: {

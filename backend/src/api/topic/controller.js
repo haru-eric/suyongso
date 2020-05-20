@@ -262,6 +262,7 @@ module.exports.createTopicVotes = async ctx => {
   const topic = await readTopic(id)
   if (!topic) return ctx.body = { status: 'fail' }
   const targetUser = await readUser(topic.userId)
+  //const topicUserId = topic.userId ip바뀌면 통과되서 추가
   const ip = ctx.get('x-real-ip')
   if (targetUser === user.id || topic.ip === ip) return ctx.body = { message: '본인에게 투표할 수 없습니다.', status: 'fail' }
   const duration = moment.duration(moment().diff(topic.created))

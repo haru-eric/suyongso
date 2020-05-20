@@ -170,7 +170,7 @@
           )
           if (data.status === 'ok') {
             const name = files[index].name
-            const filename = `https://idolboard.com/img/${data.filename}`
+            const filename = `https://suyongso.co/img/${data.filename}`
             this.$message.success(`${index + 1}번째 이미지 (${name}) 업로드 성공!`)
             this.images.push({
               name,
